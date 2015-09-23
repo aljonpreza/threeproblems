@@ -30,7 +30,9 @@ function sumRecursion(array) {
 }
 
 function sumTheSimpleWay(array) {
-  return _.reduce(array, function(memo, num) { return memo + num;}, 0);
+  return _.reduce(array, function(memo, num) {
+    return memo + num;
+  }, 0);
 }
 
 console.log("sumFor: " + sumFor(testNums));
@@ -67,7 +69,6 @@ function fib() {
     tail = tempHead;
     fibList.push(head);
   }
-
   return fibList;
 }
 
